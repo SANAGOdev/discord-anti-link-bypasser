@@ -1,0 +1,15 @@
+{
+  "name": "discord-link-bypasser",
+  "version": "1.0.0",
+  "description": "discord anti-link bypass",
+  "main": "index.js",
+  "type":"module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "SANAGOdev",
+  "license": "ISC",
+  "dependencies": {
+    "clipboardy": "^4.0.0"
+  }
+}
