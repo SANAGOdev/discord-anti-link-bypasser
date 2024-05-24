@@ -24,10 +24,11 @@ function app() {
         }
         const slashIndex = link.indexOf('/') + 1;
         let path = '';
-        if (slashIndex == 0)
+        if (slashIndex == 0 || link[6] != '/')
             path = link;
         else 
-            path = link.substring(slashIndex + 1);
+            path = link.substring(8);
+        console.log(path);
         const asciiToHex = addPercentBetweenHex(utf8ToHex(path));
         clipboard.writeSync(`<ht\ntp\ns:/\\%${asciiToHex}>`);
         console.log('\x1b[0m[\x1b[32mOK\x1b[0m] Copied on clipboard\n');
