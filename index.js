@@ -16,7 +16,7 @@ const rl = createInterface({
 });
 
 function app() {
-    rl.question('[\x1b[38;5;214m=\x1b[0m] Enter link to send (example: sanago.xyz):', (link) => {
+    rl.question('\x1b[0m[\x1b[38;5;214m=\x1b[0m] Enter link to send (example: sanago.xyz):\x1b[32m', (link) => {
         if (!link) {
             console.log('[\x1b[31mKO\x1b[0m] No link entered. Exiting...');
             rl.close();
@@ -30,7 +30,7 @@ function app() {
             path = link.substring(slashIndex + 1);
         const asciiToHex = addPercentBetweenHex(utf8ToHex(path));
         clipboard.writeSync(`<ht\ntp\ns:/\\%${asciiToHex}>`);
-        console.log('[\x1b[32mOK\x1b[0m] Copied !\n');
+        console.log('\x1b[0m[\x1b[32mOK\x1b[0m] Copied on clipboard\n');
         app();
     });
 }
