@@ -5,7 +5,7 @@
 
 ## Usage:
 > [!NOTE]
-> ### Enter your link, that can be entered in two ways, example: `https://sanago.xyz` or `sanago.xyz`
+> ### Enter your link, that can be entered in two ways, example: <br/> `https://sanago.xyz` or `sanago.xyz`
 <img title="a title" alt="Alt text" src="https://media.discordapp.net/attachments/1128674562259824651/1243375254643146752/image.png?ex=66513ef1&is=664fed71&hm=819876e564a1b2a85cd315c2cbf52da6690523093176d2913f4d16705c9cbd4b&=&format=webp">
 
 ## Description:
