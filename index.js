@@ -28,7 +28,7 @@ function app() {
             path = link;
         else 
             path = link.substring(8);
-        const asciiToHex = addPercentBetweenHex(utf8ToHex(path));
+        const asciiToHex = addPercentBetweenHex(utf8ToHex(path)).replace('%2f', '/');
         clipboard.writeSync(`<ht\ntp\ns:/\\%${asciiToHex}>`);
         console.log('\x1b[0m[\x1b[32mOK\x1b[0m] Copied on clipboard\n');
         app();
