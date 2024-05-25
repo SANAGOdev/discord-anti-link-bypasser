@@ -1,1 +1,1 @@
-start cmd /k "npm i && node"
+start cmd /k "npm i && node ."
